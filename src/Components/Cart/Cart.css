@@ -3,6 +3,20 @@
   top: 10px;
 }
 
+.user-info {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.user-details-info {
+  margin: 2rem 0 1.5rem;
+}
 .user-details-info p {
   margin: 0;
 }

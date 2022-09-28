@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { addToLocalStorage, getStoredBreakTime } from '../../utilities/fakedb';
+import profile from '../../images/profile.png';
+import { RiUserLocationFill } from 'react-icons/ri';
 import './Cart.css';
 
 const Cart = ({ cart }) => {
@@ -22,6 +24,17 @@ const Cart = ({ cart }) => {
 
   return (
     <div className="cart-details">
+      <div className="user-info">
+        <img src={profile} alt="" />
+        <div>
+          <strong>Md. Mahamudul Hasan</strong>
+
+          <p>
+            <RiUserLocationFill></RiUserLocationFill> Gopalganj, Bangladesh
+          </p>
+        </div>
+      </div>
+
       <div className="user-details-info">
         <div>
           <p>
