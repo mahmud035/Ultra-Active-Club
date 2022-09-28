@@ -3,12 +3,39 @@
   top: 10px;
 }
 
+.cart-details h4 {
+  font-size: 1.5rem;
+}
+
+.cart-details h4 span {
+  font-size: 14px;
+  color: gray;
+}
+
+.break-minutes {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 1.5rem 0 4rem;
+}
+
+.break-minutes span {
+  border-radius: 50%;
+  background-color: lightblue;
+  padding: 0.5rem 0.6rem 0.5rem;
+  cursor: pointer;
+}
+
 .cart-details h3 {
   font-size: 1.4rem;
+  padding-bottom: 0.8rem;
 }
 
 .divider {
-  padding: 0.5rem 0;
+  padding: 0.6rem 0;
 }
 
 .exercise-details,
