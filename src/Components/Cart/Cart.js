@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { addToLocalStorage, getStoredBreakTime } from '../../utilities/fakedb';
 import './Cart.css';
 
 const Cart = ({ cart }) => {
-  const [breakTime, setBreakTime] = useState('');
+  const [breakTime, setBreakTime] = useState(0);
+
+  useEffect(() => {
+    const storedBreakTime = getStoredBreakTime();
+    setBreakTime(storedBreakTime);
+  }, []);
 
   let exerciseTime = 0;
   for (const activity of cart) {
@@ -11,6 +17,7 @@ const Cart = ({ cart }) => {
 
   const handleBreakTime = (e) => {
     setBreakTime(e.target.innerText);
+    addToLocalStorage(e.target.innerText);
   };
 
   return (
