@@ -1,0 +1,10 @@
+.navigation-bar {
+  background-color: hsl(209, 23%, 22%);
+  height: 80px;
+}
+
+.nav-icon {
+  color: #fff;
+  margin-right: 5px;
+  margin-top: -4px;
+}

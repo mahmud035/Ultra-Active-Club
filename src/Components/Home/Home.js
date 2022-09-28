@@ -15,7 +15,6 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="activity-content-container">
-        <h1>The Daily Burn</h1>
         <div className="activity-container">
           {activities.map((activity, index) => (
             <Activity key={index} activity={activity}></Activity>
