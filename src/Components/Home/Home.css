@@ -22,4 +22,5 @@
   padding: 1.5rem;
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
+  height: calc(100vh- 80px);
 }
