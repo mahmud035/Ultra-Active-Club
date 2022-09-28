@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cart.css';
 
 const Cart = ({ cart }) => {
+  const [breakTime, setBreakTime] = useState('');
+
   let exerciseTime = 0;
   for (const activity of cart) {
     exerciseTime = exerciseTime + activity.time;
   }
+
+  const handleBreakTime = (e) => {
+    setBreakTime(e.target.innerText);
+  };
 
   return (
     <div className="cart-details">
@@ -13,11 +19,11 @@ const Cart = ({ cart }) => {
         Add A Break <span>(minutes)</span>
       </h4>
       <div className="break-minutes">
-        <span>10</span>
-        <span>20</span>
-        <span>30</span>
-        <span>40</span>
-        <span>50</span>
+        <span onClick={(e) => handleBreakTime(e)}>10</span>
+        <span onClick={(e) => handleBreakTime(e)}>20</span>
+        <span onClick={(e) => handleBreakTime(e)}>30</span>
+        <span onClick={(e) => handleBreakTime(e)}>40</span>
+        <span onClick={(e) => handleBreakTime(e)}>50</span>
       </div>
 
       <h3>Exercise Details</h3>
@@ -29,7 +35,7 @@ const Cart = ({ cart }) => {
 
       <div className="break-times">
         <strong>Break Time</strong>
-        <span className="text-muted">0 minutes</span>
+        <span className="text-muted">{breakTime} minutes</span>
       </div>
     </div>
   );
