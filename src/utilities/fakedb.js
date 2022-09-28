@@ -1,5 +1,5 @@
 const addToLocalStorage = (time) => {
-  const breakTime = getStoredBreakTime();
+  // const breakTime = getStoredBreakTime();
 
   localStorage.setItem('breakTime', time);
 };
