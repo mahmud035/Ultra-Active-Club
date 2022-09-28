@@ -1,11 +1,7 @@
 .home-container {
   display: grid;
   grid-template-columns: 4fr 1.5fr;
-  gap: 1.5rem;
-}
-
-.activity-content-container {
-  border: 1px solid blue;
+  /* gap: 1.5rem; */
 }
 
 .activity-container {
@@ -15,9 +11,12 @@
   justify-items: center;
   padding: 5rem 0 7rem;
   min-height: calc(100vh- 80px);
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
 }
 
 .cart-container {
-  border: 1px solid green;
   padding: 1.5rem;
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
 }

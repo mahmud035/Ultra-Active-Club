@@ -73,13 +73,13 @@ const Cart = ({ cart }) => {
       <h3>Exercise Details</h3>
       <div className="exercise-details">
         <strong>Exercise Time</strong>
-        <span className="text-muted">{exerciseTime} minutes</span>
+        <span>{exerciseTime} minutes</span>
       </div>
       <div className="divider"></div>
 
       <div className="break-times">
         <strong>Break Time</strong>
-        <span className="text-muted">{breakTime} minutes</span>
+        <span>{breakTime} minutes</span>
       </div>
     </div>
   );

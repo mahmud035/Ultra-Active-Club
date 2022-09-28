@@ -39,18 +39,12 @@
 }
 
 .break-minutes {
-  display: flex;
-  justify-content: space-between;
-  background-color: gray;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   margin: 1.5rem 0 4rem;
 }
 
 .break-minutes span {
   border-radius: 50%;
-  background-color: lightblue;
+  background-color: #8fe3cf;
   padding: 0.5rem 0.6rem 0.5rem;
   cursor: pointer;
 }
@@ -64,6 +58,7 @@
   padding: 0.6rem 0;
 }
 
+.break-minutes,
 .exercise-details,
 .break-times,
 .user-details-info {
@@ -72,7 +67,8 @@
   background-color: gray;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
 }
 
 .exercise-details strong,

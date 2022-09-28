@@ -1,5 +1,6 @@
 .navigation-bar {
-  background-color: hsl(209, 23%, 22%);
+  background-color: #112b3c;
+  color: hsl(0, 0%, 100%);
   height: 80px;
 }
 
