@@ -1,0 +1,28 @@
+.cart-details {
+  position: sticky;
+  top: 10px;
+}
+
+.cart-details h3 {
+  font-size: 1.4rem;
+}
+
+.divider {
+  padding: 0.5rem 0;
+}
+
+.exercise-details,
+.break-times {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.exercise-details strong,
+.break-times strong {
+  font-size: 17px;
+  font-weight: 500;
+}
