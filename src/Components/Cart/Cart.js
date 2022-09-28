@@ -22,6 +22,30 @@ const Cart = ({ cart }) => {
 
   return (
     <div className="cart-details">
+      <div className="user-details-info">
+        <div>
+          <p>
+            <strong>68</strong>
+            <span>kg</span>
+          </p>
+          <p>Weight</p>
+        </div>
+        <div>
+          <p>
+            <strong>5.4</strong>
+            <span>inch</span>
+          </p>
+          <p>Height</p>
+        </div>
+        <div>
+          <p>
+            <strong>27</strong>
+            <span>yrs</span>
+          </p>
+          <p>Age</p>
+        </div>
+      </div>
+
       <h4>
         Add A Break <span>(minutes)</span>
       </h4>

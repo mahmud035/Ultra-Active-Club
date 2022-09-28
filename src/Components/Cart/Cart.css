@@ -3,6 +3,18 @@
   top: 10px;
 }
 
+.user-details-info p {
+  margin: 0;
+}
+
+.user-details-info p strong {
+  font-size: 1.2rem;
+}
+
+.user-details-info p span {
+  color: lightgrey;
+}
+
 .cart-details h4 {
   font-size: 1.5rem;
 }
@@ -39,7 +51,8 @@
 }
 
 .exercise-details,
-.break-times {
+.break-times,
+.user-details-info {
   display: flex;
   justify-content: space-between;
   background-color: gray;
