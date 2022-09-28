@@ -1,10 +1,22 @@
 .accordion-container {
   background-color: hsl(207, 26%, 17%);
   color: hsl(0, 0%, 100%);
-  padding: 5rem 0;
+  padding: 5rem 1.5rem;
 }
 
 .accordion-header {
   background-color: hsl(209, 23%, 22%) !important;
   color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 600px) {
+  .accordion-content {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .accordion-content {
+    width: 75% !important;
+  }
 }

@@ -5,7 +5,7 @@ import Accordion from 'react-bootstrap/Accordion';
 const QuestionAndAnswer = () => {
   return (
     <div className="accordion-container">
-      <Accordion className="w-50 mx-auto accordion">
+      <Accordion className="w-50 mx-auto accordion-content">
         <Accordion.Item eventKey="0">
           <Accordion.Header>How Does React Works?</Accordion.Header>
           <Accordion.Body>

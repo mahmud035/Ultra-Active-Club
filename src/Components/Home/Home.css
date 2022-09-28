@@ -24,3 +24,18 @@
   color: hsl(0, 0%, 100%);
   height: calc(100vh- 80px);
 }
+
+@media (max-width: 600px) {
+  .home-container {
+    grid-template-columns: 1fr;
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-container .activity-content-container {
+    order: 1;
+  }
+}

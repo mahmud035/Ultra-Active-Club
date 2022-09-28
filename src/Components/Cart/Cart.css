@@ -6,6 +6,7 @@
 .user-info {
   display: flex;
   gap: 0.5rem;
+  padding: 0.8rem 0;
 }
 
 .user-info img {
@@ -31,11 +32,11 @@
 
 .cart-details h4 {
   font-size: 1.5rem;
+  padding: 0.5rem 0;
 }
 
 .cart-details h4 span {
   font-size: 14px;
-  color: gray;
 }
 
 .break-minutes {
