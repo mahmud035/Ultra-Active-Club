@@ -6,6 +6,7 @@ import './Home.css';
 const Home = () => {
   const [activities, setActivities] = useState([]);
   const [cart, setCart] = useState([]);
+  const [position, setPosition] = useState('top-center');
 
   useEffect(() => {
     fetch('data.json')
@@ -17,6 +18,10 @@ const Home = () => {
     const newCart = [...cart, selectedActivity];
     setCart(newCart);
   };
+
+  // const handleToastPosition = () => {
+  //   setPosition('top-center');
+  // };
 
   return (
     <div className="home-container">
@@ -35,7 +40,7 @@ const Home = () => {
       </div>
 
       <div className="cart-container">
-        <Cart cart={cart}></Cart>
+        <Cart cart={cart} position={position}></Cart>
       </div>
     </div>
   );

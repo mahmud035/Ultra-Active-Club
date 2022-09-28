@@ -3,8 +3,9 @@ import { addToLocalStorage, getStoredBreakTime } from '../../utilities/fakedb';
 import profile from '../../images/profile.png';
 import { RiUserLocationFill } from 'react-icons/ri';
 import './Cart.css';
+import ReactToast from '../ReactToast/ReactToast';
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, position }) => {
   const [breakTime, setBreakTime] = useState(0);
 
   useEffect(() => {
@@ -81,6 +82,8 @@ const Cart = ({ cart }) => {
         <strong>Break Time</strong>
         <span>{breakTime} minutes</span>
       </div>
+
+      <ReactToast position={position}></ReactToast>
     </div>
   );
 };
