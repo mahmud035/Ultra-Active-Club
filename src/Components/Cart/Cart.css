@@ -17,6 +17,7 @@
 
 .location-icon {
   color: #8fe3cf;
+  margin-right: 5px;
 }
 
 .user-details-info {
@@ -56,7 +57,7 @@
 }
 
 .break-minutes span.active {
-  background-color: red;
+  background-color: #256d85;
 }
 
 .cart-details h3 {

@@ -7,6 +7,7 @@ import ReactToast from '../ReactToast/ReactToast';
 
 const Cart = ({ cart, position }) => {
   const [breakTime, setBreakTime] = useState(0);
+  const [selected, setSelected] = useState(0);
 
   useEffect(() => {
     const storedBreakTime = getStoredBreakTime();
@@ -18,11 +19,15 @@ const Cart = ({ cart, position }) => {
     exerciseTime = exerciseTime + activity.time;
   }
 
-  const handleBreakTime = (e) => {
-    const element = e.target;
-    element.classList.toggle('active');
+  const handleBreakTime = (e, spanNum) => {
     setBreakTime(e.target.innerText);
     addToLocalStorage(e.target.innerText);
+
+    handleClick(spanNum);
+  };
+
+  const handleClick = (spanNum) => {
+    setSelected(spanNum);
   };
 
   return (
@@ -33,7 +38,7 @@ const Cart = ({ cart, position }) => {
           <strong>Md. Mahamudul Hasan</strong>
 
           <p>
-            <RiUserLocationFill className="location-icon"></RiUserLocationFill>{' '}
+            <RiUserLocationFill className="location-icon"></RiUserLocationFill>
             Gopalganj, Bangladesh
           </p>
         </div>
@@ -67,11 +72,36 @@ const Cart = ({ cart, position }) => {
         Add A Break <span>(minutes)</span>
       </h4>
       <div className="break-minutes">
-        <span onClick={(e) => handleBreakTime(e)}>10</span>
-        <span onClick={(e) => handleBreakTime(e)}>20</span>
-        <span onClick={(e) => handleBreakTime(e)}>30</span>
-        <span onClick={(e) => handleBreakTime(e)}>40</span>
-        <span onClick={(e) => handleBreakTime(e)}>50</span>
+        <span
+          onClick={(e) => handleBreakTime(e, 1)}
+          className={selected === 1 ? 'active' : ''}
+        >
+          10
+        </span>
+        <span
+          onClick={(e) => handleBreakTime(e, 2)}
+          className={selected === 2 ? 'active' : ''}
+        >
+          20
+        </span>
+        <span
+          onClick={(e) => handleBreakTime(e, 3)}
+          className={selected === 3 ? 'active' : ''}
+        >
+          30
+        </span>
+        <span
+          onClick={(e) => handleBreakTime(e, 4)}
+          className={selected === 4 ? 'active' : ''}
+        >
+          40
+        </span>
+        <span
+          onClick={(e) => handleBreakTime(e, 5)}
+          className={selected === 5 ? 'active' : ''}
+        >
+          50
+        </span>
       </div>
 
       <h3>Exercise Details</h3>
