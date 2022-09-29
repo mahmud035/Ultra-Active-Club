@@ -55,6 +55,10 @@
   font-weight: 600;
 }
 
+.break-minutes span.active {
+  background-color: red;
+}
+
 .cart-details h3 {
   font-size: 1.4rem;
   padding-bottom: 0.8rem;

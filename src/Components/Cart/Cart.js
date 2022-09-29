@@ -19,6 +19,8 @@ const Cart = ({ cart, position }) => {
   }
 
   const handleBreakTime = (e) => {
+    const element = e.target;
+    element.classList.toggle('active');
     setBreakTime(e.target.innerText);
     addToLocalStorage(e.target.innerText);
   };
