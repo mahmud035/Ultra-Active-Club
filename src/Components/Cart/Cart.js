@@ -31,7 +31,8 @@ const Cart = ({ cart, position }) => {
           <strong>Md. Mahamudul Hasan</strong>
 
           <p>
-            <RiUserLocationFill></RiUserLocationFill> Gopalganj, Bangladesh
+            <RiUserLocationFill className="location-icon"></RiUserLocationFill>{' '}
+            Gopalganj, Bangladesh
           </p>
         </div>
       </div>

@@ -15,6 +15,10 @@
   border-radius: 50%;
 }
 
+.location-icon {
+  color: #8fe3cf;
+}
+
 .user-details-info {
   margin: 2rem 0 1.5rem;
 }

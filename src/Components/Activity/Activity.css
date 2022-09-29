@@ -1,5 +1,5 @@
 .activity-card {
-  width: 300px;
+  width: 290px;
   min-height: 410px;
   border-radius: 10px;
   cursor: pointer;
@@ -41,4 +41,10 @@
   cursor: pointer;
   font-weight: 600;
   font-size: 0.9rem;
+}
+
+@media (min-width: 1350px) {
+  .activity-card {
+    width: 310px;
+  }
 }

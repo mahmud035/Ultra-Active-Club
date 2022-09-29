@@ -26,16 +26,14 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className=" activity-content-container">
-        <div className="container">
-          <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 activity-container">
-            {activities.map((activity, index) => (
-              <Activity
-                key={index}
-                activity={activity}
-                handleAddToList={handleAddToList}
-              ></Activity>
-            ))}
-          </div>
+        <div className=" activity-container">
+          {activities.map((activity, index) => (
+            <Activity
+              key={index}
+              activity={activity}
+              handleAddToList={handleAddToList}
+            ></Activity>
+          ))}
         </div>
       </div>
 
